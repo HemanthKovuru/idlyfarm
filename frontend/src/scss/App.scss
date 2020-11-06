@@ -1,0 +1,17 @@
+@import "./mixins";
+
+.app {
+  background-color: #e4e4e4;
+  height: 90vh;
+  width: 80vw;
+  margin: auto;
+  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.35);
+  border-radius: 4px;
+  margin-top: 5vh;
+  overflow: hidden;
+  @include responsive(laptop) {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+}

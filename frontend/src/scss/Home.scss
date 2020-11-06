@@ -1,0 +1,92 @@
+@import "./mixins";
+
+.container {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  height: 100vh;
+  width: 100%;
+
+  @include responsive(largephone) {
+    grid-template-columns: 100%;
+  }
+
+  &__left {
+    padding: 1.5rem 0;
+    font-size: 1.2rem;
+    color: #fff;
+    background-image: linear-gradient(to right bottom, #666666e6, #555555e6);
+
+    @include responsive(largephone) {
+      margin: 1rem;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      border-radius: 5px;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  &__item {
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem;
+    color: inherit;
+    transition: all 0.2s;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+
+    &:hover {
+      color: #fff;
+      cursor: pointer;
+      letter-spacing: 3px;
+      color: #f39c12;
+    }
+  }
+
+  &__right {
+    width: 100%;
+    overflow-y: scroll;
+    // height: 67rem;
+    height: 100%;
+    &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
+
+    @include responsive(largephone) {
+      grid-template-columns: 100%;
+    }
+  }
+
+  &__right-items {
+    display: grid;
+    grid-template-columns: repeat(3, 24rem);
+    grid-template-rows: repeat(auto-fit, 21.5rem);
+    grid-auto-columns: 24rem;
+    grid-auto-rows: 21.5rem;
+    grid-gap: 5rem;
+    justify-content: center;
+
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+
+    @include responsive(largedesktop) {
+      grid-template-columns: repeat(4, 24rem);
+    }
+
+    @include responsive(tablet) {
+      grid-template-columns: repeat(2, 24rem);
+    }
+
+    @include responsive(largephone) {
+      grid-template-columns: 30rem;
+      grid-template-rows: repeat(auto-fit, 25rem);
+      grid-auto-columns: 30rem;
+      grid-auto-rows: 25rem;
+    }
+  }
+}
+
+.active {
+  color: #f39c12;
+}

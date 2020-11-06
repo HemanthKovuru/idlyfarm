@@ -1,0 +1,135 @@
+[
+  {
+    "id": 1,
+    "name": "plain idly",
+    "price": 10,
+    "coverImage": "plainidly.jpg",
+    "type": "general"
+  },
+  {
+    "id": 2,
+    "name": "ravva idly",
+    "price": 15,
+    "coverImage": "ravvaidly.jpg",
+    "type": "special"
+  },
+  {
+    "id": 3,
+    "name": "ragi idly",
+    "price": 15,
+    "coverImage": "ragiidly.jpg",
+    "type": "special"
+  },
+  {
+    "id": 4,
+    "name": "oats idly",
+    "price": 15,
+    "coverImage": "oatsidly.jpg",
+    "type": "special"
+  },
+  {
+    "id": 5,
+    "name": "plain dosa",
+    "price": 30,
+    "coverImage": "plaindosa.jpg",
+    "type": "general"
+  },
+  {
+    "id": 6,
+    "name": "rava dosa",
+    "price": 40,
+    "coverImage": "ravadosa.jpg",
+    "type": "favourite"
+  },
+  {
+    "id": 7,
+    "name": "masala dosa",
+    "price": 40,
+    "coverImage": "masaladosa.jpg",
+    "type": "favourite"
+  },
+  {
+    "id": 8,
+    "name": "uttapam",
+    "price": 40,
+    "coverImage": "uttapam.jpg",
+    "type": "favourite"
+  },
+  {
+    "id": 9,
+    "name": "onion dosa",
+    "price": 40,
+    "coverImage": "oniondosa.jpg",
+    "type": "favourite"
+  },
+  {
+    "id": 10,
+    "name": "butter dosa",
+    "price": 35,
+    "coverImage": "butterdosa.jpg",
+    "type": "favourite"
+  },
+  {
+    "id": 11,
+    "name": "set dosa",
+    "price": 40,
+    "coverImage": "setdosa.jpg",
+    "type": "favourite"
+  },
+  {
+    "id": 12,
+    "name": "ghee dosa",
+    "price": 35,
+    "coverImage": "gheedosa.jpg",
+    "type": "favourite"
+  },
+  {
+    "id": 13,
+    "name": "masala vada",
+    "price": 10,
+    "coverImage": "masalavada.jpg",
+    "type": "general"
+  },
+  {
+    "id": 14,
+    "name": "medu vada",
+    "price": 10,
+    "coverImage": "meduvada.jpg",
+    "type": "general"
+  },
+  {
+    "id": 15,
+    "name": "puri",
+    "price": 20,
+    "coverImage": "puri.jpg",
+    "type": "general"
+  },
+  {
+    "id": 16,
+    "name": "lemon rice",
+    "price": 40,
+    "coverImage": "lemon.jpg",
+    "type": "rice"
+  },
+  {
+    "id": 17,
+    "name": "curd rice",
+    "price": 40,
+    "coverImage": "curd.jpg",
+    "type": "rice"
+  },
+  {
+    "id": 18,
+    "name": "tomato rice",
+    "price": 50,
+    "coverImage": "tomato.jpg",
+    "type": "rice"
+  },
+  {
+    "id": 19,
+    "name": "jeera rice",
+    "price": 50,
+    "coverImage": "jeera.jpg",
+    "type": "rice"
+  }
+]

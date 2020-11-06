@@ -1,0 +1,68 @@
+@import "./mixins";
+
+.form {
+  &-auth {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: repeat(2, 1fr);
+
+    @include responsive(largephone) {
+      grid-template-columns: 1fr;
+
+      overflow-y: scroll;
+
+      &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+      }
+    }
+  }
+
+  &__right {
+    background-color: #e8e8e8;
+  }
+
+  &__signup {
+    width: 70%;
+    margin: 6rem auto;
+
+    background-image: linear-gradient(to right bottom, #f39d12d3, #e74d3ce7);
+    padding: 2rem 2rem;
+    border-radius: 3px;
+    box-shadow: 0 0 2rem rgba(#000, 0.2);
+
+    @include responsive(largephone) {
+      width: 90%;
+
+      margin: 3rem auto;
+    }
+  }
+}
+
+.heading-tertiary {
+  font-size: 1.6rem;
+  color: #000;
+  margin-bottom: 1.3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.custom-1,
+.custom-2 {
+  width: 48%;
+  display: inline-block;
+}
+
+.custom-1 {
+  margin-right: 4%;
+}
+
+.btn-white {
+  background-color: rgb(240, 240, 240);
+  border: none;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  color: orange;
+  font-weight: 600;
+}

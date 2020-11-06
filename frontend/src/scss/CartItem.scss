@@ -1,0 +1,76 @@
+@import "./mixins";
+
+.box {
+  &__container {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    // height: 8rem;
+    border-radius: 0.7rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    max-width: 36rem;
+    overflow: hidden;
+    margin: 2rem auto;
+    font-size: 1.5rem;
+    color: #fff;
+    background-image: linear-gradient(to right bottom, #f39c12, #e74c3c);
+    align-content: center;
+
+    @include responsive(smallestphone) {
+      width: 90%;
+    }
+  }
+
+  &__image-box {
+    padding: 0.8rem;
+  }
+
+  &__img {
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    border: 4px solid rgba(228, 228, 228, 0.801);
+  }
+
+  &__right {
+    display: grid;
+    grid-template-columns: 14rem 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 1rem;
+    padding: 1rem;
+    align-items: center;
+    text-transform: capitalize;
+    @include responsive(smallestphone) {
+      grid-template-columns: 1fr 60%;
+    }
+  }
+
+  &__total {
+    justify-self: start;
+  }
+}
+
+.loader {
+  border: 3px solid #ffffff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border-top: 3px solid orange;
+  animation: spin 1s linear infinite;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
